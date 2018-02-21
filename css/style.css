@@ -1,0 +1,601 @@
+* {
+    margin: 0;
+    padding: 0;
+    transition: all 0.5s;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    cursor: pointer;
+}
+
+body {
+    background-image: url("../img/111.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: center;
+    font-family: Verdana, sans-serif;
+}
+
+/* --------------------header--------------------- */
+
+#hamburger {
+    display: none;
+}
+
+header .logo {
+    width: 200px;
+}
+
+header .logo img {
+    width: 100%;
+}
+
+header nav ul li{
+    display: inline-block;
+}
+
+header nav ul li a {
+    font-weight: bold;
+    font-size: 20px;
+    padding: 8px 5px;
+    display: block;
+    color: #2C2C96;
+    transition: all .5s;
+}
+
+header nav ul li a:hover {
+    color: #170B3D;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 10px 0 10px;
+}
+
+header nav {
+    width: 70%;
+    transition: none;
+}
+
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+.drop .dropdown {
+    position: absolute;
+    display: none;
+}
+
+.drop:hover .dropdown {
+    /* ovde je sad neka fora koju u javascript treba da resim */
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(255, 167, 255, 0.80);
+
+    z-index: 5;
+}
+
+
+/*------------ pocetna ispod menija ------------*/
+
+.naslov {
+    height: 400px;
+}
+
+.naslov .naslov-tekst {
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bold;
+    opacity: .7;
+    padding-top: 130px;
+    border-bottom: 3px solid black;
+}
+
+.naslov h1 {
+    text-align: center;
+    opacity: .7;
+    font-size: 20px;
+}
+
+/*------------ kratak opis (nekoliko pitanja) ------------*/
+
+.kratakTekst {
+    text-align: center;
+    background-color: rgba(77, 77, 254, 0.29);
+}
+
+.kratakTekst div {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+}
+
+.kratakTekst p {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+/* -------------4 slike s tekstom------------ */
+
+.izaberi {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.izaberi div {
+    width: 35%;
+    text-align: center;
+    margin: 25px 0;
+}
+
+.izaberi div img {
+    border-radius: 50%;
+    width: 100%;
+}
+
+.izaberi div .procitaj {
+    font-size: 11px;
+    background-color: rgba(57, 57, 253, 0.21);
+    padding: 2px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all .5s;
+}
+
+.izaberi div .procitaj:hover {
+    background-color: rgba(27, 27, 255, 0.40);
+    color: yellow;
+}
+
+.izaberi div .masaza {
+    color: #2C2C96;
+}
+
+
+/* --------------------------sve masaze----------------- */
+
+.masaza {
+    padding-bottom: 30px;
+
+}
+
+.masaza .podnaslov {
+    width: 500px;
+    margin: 0 auto 30px auto;
+    text-align: center;
+    font-weight: bold;
+    opacity: .8;
+    padding-top: 70px;
+    border-bottom: 3px solid black;
+}
+
+.masaza .podnaslov h2 {
+    text-align: center;
+    opacity: .8;
+}
+
+.masaza .pasus {
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 20px;
+    background-color: rgba(255, 255, 255, 0.60);
+    border-radius: 20px;
+}
+
+
+
+/* ---------------------kontakt---------------- */
+
+
+.kontakt-slika {
+    width: 50%;
+    margin: 50px auto 50px auto;
+}
+
+.kontakt-slika img {
+    width: 100%;
+}
+
+.kontakt h3 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.kontakt .insta {
+    display: flex;
+    justify-content: space-around;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.kontakt .insta div {
+    padding: 5px 20px;
+    background-color: rgba(0, 0, 255, 0.26);
+    border-radius: 20px;
+}
+
+
+
+/* ---------------------forma--------------------- */
+
+.forma {
+    width: 40%;
+    margin: 50px auto 20px auto;
+}
+
+.forma form .forma-sve {
+    display: flex;
+    flex-direction: column;
+}
+
+.forma form .forma-sve .input {
+    display: flex;
+    flex-direction: column;
+    opacity: .8;
+}
+
+.forma form .forma-sve .input input {
+    text-align: center;
+    margin: 3px;
+    padding: 10px 5px;
+    border-radius: 30px;
+    border: none;
+    font-size: 15px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.forma form .forma-sve .input textarea {
+    margin-top: 3px;
+    border-radius: 30px;
+    border: none;
+    padding: 10px 10px;
+    font-size: 15px;
+    /* font-family: Verdana, Geneva, Tahoma, sans-serif; */
+}
+
+.forma form .forma-sve .button {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.forma form .forma-sve .button button {
+    padding: 10px;
+    font-size: 15px;
+    width: 48%;
+    border-radius: 50px;
+    border: none;
+    cursor: pointer;
+}
+
+#sub {
+    background-color: rgba(98, 98, 252, 0.60);
+}
+
+#sub:hover {
+    background-color: rgb(98, 98, 252);
+    color: white;
+}
+
+#reset {
+    background-color: rgba(251, 52, 52, 0.60);
+}
+
+#reset:hover {
+    background-color: rgb(251, 52, 52);
+    color: white;
+}
+
+
+
+/* ------------------------footer--------------- */
+
+footer {
+    text-align: center;
+}
+
+footer p {
+    font-size: 13px;
+    background-color: #D8D8D8;
+}
+
+
+/* -----------------------------------------tablet-------------------------------------- */
+
+@media only screen and (max-width: 850px) {
+
+    header nav ul li a {
+        font-weight: normal;
+        font-size: 15px;
+        padding: 5px 10px;
+        display: block;
+        color: #2C2C96;
+        background-color: rgba(255, 255, 255, 0.5);
+        border-radius: 10px;
+    }
+
+    .drop:hover .dropdown {
+        background-color: rgba(255, 167, 255, 0.01);
+    
+    }
+
+    /* pocetna ispod menija */
+    .naslov .naslov-tekst {
+        padding-top: 80px;
+    }
+
+    /* masaze */
+    .masaza .podnaslov h2 {
+        background-color: rgba(255, 255, 255, 0.80);
+    }
+
+
+    /* kontakt */
+    .kontakt .insta {
+        width: 80%;
+    }
+
+    .kontakt .insta div {
+        padding: 5px 5px;
+        text-align: center;
+        width: 45%;
+    }
+
+    /* forma */
+
+    .forma {
+        width: 70%;
+        margin: 50px auto 20px auto;
+    }
+
+    .forma form .forma-sve .input {
+        opacity: .9;
+    }
+
+    .forma form .forma-sve .button button {
+        color: white;
+    }
+
+    #sub {
+        background-color: rgba(98, 98, 252, 0.80);
+    }
+
+    #reset {
+        background-color: rgba(251, 52, 52, 0.80);
+    }
+
+}
+
+
+/* ----------------------------------------telefon---------------------------------------- */
+
+@media only screen and (max-width: 570px) {
+
+
+    /* meni */
+    header {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        padding: 5px 10px 0 10px;
+    }
+
+    header .logo {
+        /* width: 280px; */
+        width: 80%;
+        padding-top: 20px;
+    }
+
+    header nav {
+        width: 100%;
+        background-color: rgba(255, 255, 255, 0.7);
+    }
+
+    header nav ul {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    header nav ul li a {
+        background-color: rgba(255, 255, 255, 0.01);
+    }
+
+    .drop:hover .dropdown {
+        background-color: rgba(255, 255, 255, 0.7);    
+    }
+
+    /* naslov */
+    .naslov {
+        height: 150px;
+    }
+
+    .naslov .naslov-tekst {
+        display: none; 
+    }
+
+    /* kratak opis (nekoliko pitanja) */
+
+    .kratakTekst div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-bottom: 10px;
+    }
+
+    .kratakTekst div span {
+        padding-bottom: 10px;
+    }
+    
+    .kratakTekst p {
+        font-weight: bold;
+        font-size: medium;
+    }
+
+    /* 4 slike s tekstom */
+    .izaberi {
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+    
+    .izaberi div {
+        width: 90%;
+        margin: 25px auto;
+    }
+
+    /* sve masaze */
+    .masaza .podnaslov {
+        width: 300px;
+    }
+
+    /* ---------------------kontakt---------------- */
+
+
+    .kontakt-slika {
+        display: none;
+    }
+
+    .kontakt h3 {
+        margin: 50px 0;
+    }
+
+    .kontakt .insta {
+        width: 90%;
+    }
+
+    .kontakt .insta div {
+        padding: 5px 5px;
+        text-align: center;
+        width: 45%;
+    }
+
+    /* forma */
+    .forma {
+        width: 85%;
+    }
+
+}
+
+/* -----------------------------------------mali telefon------------------------------------ */
+
+@media only screen and (max-width: 375px) {
+
+    #hamburger {
+        position: absolute;
+        right: 0;
+        display: block;
+    }
+
+    #hamburger img {
+        width: 25px;
+        padding-right: 5px;
+    }
+
+    header {
+        padding: 0;
+    }
+
+    header .logo {
+        /* width: 150px; */
+        width: 90%;
+    }
+
+    header nav {
+        width: 100%;
+        display: none;
+    }
+
+    header nav ul {
+        /* ovde napravi dugme da na klik sakriva i pokazuje meni */
+        flex-direction: column;
+        text-align: center;
+    }
+
+
+/* --------- */
+    .nav-expanded {
+        display: block;
+    }
+/* ---------- */
+
+    .dropdown {
+        position: relative;
+        background-color: rgba(0, 255, 128, 0.5);
+    }
+
+    .dropdown li {
+        background-color: rgba(0, 255, 128, 0.9);
+    }
+
+    .naslov {
+        height: 110px;
+    }
+
+    /* kratak tekst */
+    .kratakTekst div {
+        display: flex;
+        flex-direction: column;
+        /* justify-content: space-around; */
+        margin-bottom: 20px;
+    }
+
+    /* sve masaze */
+    .masaza .podnaslov {
+        width: 100%;
+        margin: 0 0 30px 0;
+    }
+
+    .masaza .pasus {
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+        border-radius: 0;
+    }
+
+    /* kontakt */
+    .kontakt .insta {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .kontakt .insta div {
+        padding: 5px 5px;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 5px;
+    }
+
+    /* forma */
+    .forma form .forma-sve .input input {
+        font-size: 12px;
+    }
+    
+    .forma form .forma-sve .input textarea {
+        font-size: 12px;
+    }
+
+    .forma form .forma-sve .button {
+        flex-direction: column;
+        margin-top: 20px;
+    }
+    
+    .forma form .forma-sve .button button {
+        margin-bottom: 5px;
+        width: 100%;
+    }
+
+
+}

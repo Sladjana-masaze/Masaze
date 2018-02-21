@@ -1,0 +1,38 @@
+<!-- Kontakt -->
+<section class="kontakt">  
+    <div class="kontakt-slika">
+        <img src="img/SM.png" alt="">
+    </div>
+    <h3>Kontaktirajte me preko:</h3>
+    <div class="insta">
+        <div>
+            <p><strong>Instagram profila: </strong>sladjana_massage</p>
+        </div>
+        <div>
+            <p><strong>Poziva na telefon:</strong> 06x xxx xx xx</p>
+        </div>
+    </div>
+    <div class="forma">
+        <h3>Ili ostavite podatke i ja cu kontaktirati Vas:</h3>
+        <form id="contact-form" action="https://formspree.io/sladjanamasaze@gmail.com" method="POST">
+            <div class="forma-sve">
+                <div class="input" id="saljemPodatke">
+                    <input type="text" name="Ime:" placeholder="Unesite Vaše ime" id="inputName" >
+                    <input type="text" name="Prezime:" placeholder="Unesite Vaše prezime" id="inputLastName">
+                    <input type="email" name="Email:" placeholder="Unesite Vašu email adresu" id="inputEmail">
+                    <input type="number" name="Telefon:" placeholder="Unesite Vaš broj telefona" id="inputNumber" >
+                    <!-- izmedju ova dva komentara je nesto od formspree -->
+                    <input type="hidden" name="_next" value="index.html" />
+                    <input type="text" name="_gotcha" style="display:none" />
+                    <!-- i nece biti prikazano -->
+                    <textarea name="Poruka:"  cols="30" rows="7" placeholder="Unesite Vasu poruku..." id="inputMessage"></textarea>
+                </div>
+                <div class="button">
+                    <button type="submit" id="sub">Pošalji</button>
+                    <button type="reset" id="reset">Resetuj</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</section>
+

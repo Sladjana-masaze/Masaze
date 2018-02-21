@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Masaza</title>
+    <link rel="shortcut icon" href="img/S.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <!-- <script src="js/script.js"></script> -->
+</head>
+<body>
+    <div id="hamburger">
+        <img src="img/menu-icon.png" alt="Menu">
+    </div>
+    <header>
+        <div class="logo">
+            <img src="img/SM.png" alt="">
+        </div>
+        <nav id="navigation">
+            <ul>
+                <li><a href="index.html">Početna</a></li>
+                <li class="drop"><a id="dugM">Masaže</a>
+                    <ul class="dropdown">
+                        <li><a id="rel">Relax masaža</a></li>
+                        <li><a id="ant">Anti celulit masaža</a></li>
+                        <li><a id="sport">Sportska masaža</a></li>
+                        <li><a id="stp">Masaža stopala</a></li>
+                    </ul>
+                </li>
+                <li><a id="tret">Tretmani lica</a></li>
+                <!-- <li><a href="kntt.html">Kontakt</a></li> -->
+                <li><a id="kon">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- OVDE IDE AJAX.HTML -->
+    <div id="ajaxx">
+        <div class="naslov">
+            <div class="naslov-tekst">
+                <span>Dobrodošli!</span>
+            </div>
+            <h1>Slađana Masaže</h1>
+        </div>
+        
+        <div class="kratakTekst">
+            <div>
+                <span>Umorni ste?</span>
+                <span>Treba Vam odmor?</span>
+                <span>Pod stresom ste?</span>
+                <span>Želite da se oslobodite celulita?</span>
+            </div>
+            <p>"Slađana Masaže" je onda pravo mesto za Vas!</p>
+        </div>
+
+        <section class="izaberi">
+            <div>
+                <span class="masaza">Relax masaža</span>
+                <img src="img/relax.jpg" alt="">
+                <span class="procitaj" id="relM">Pročitaj više...</span>
+            </div>
+            <div>
+                <span class="masaza">Anti celulit masaža</span>
+                <img src="img/anticelulit.jpg" alt="">
+                <span class="procitaj" id="antM">Pročitaj više...</span>
+            </div>
+            <div>
+                <span class="masaza">Sportska masaža</span>
+                <img src="img/sportska.jpg" alt="">
+                <span class="procitaj" id="sportM">Pročitaj više...</span>
+            </div>
+            <div>
+                <span class="masaza">Masaža stopala</span>
+                <img src="img/foot.jpg" alt="">
+                <span class="procitaj" id="stpM">Pročitaj više...</span>
+            </div>
+        </section>
+    </div>
+    
+    <footer>
+        <p>Copyright &copy; 2018 | <a href="https://stevanstojsin.github.io/Portfolio/">Stevan</p>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
